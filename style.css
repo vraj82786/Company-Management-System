@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+}
+
+#main-Landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "btn";
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 5vh;
+}
+
+.card-image {
+    grid-area: image;
+    background: url('card1.jpg');
+    background-size: cover;
+    border-top-left-radius: 25px;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    font-size: 28px;
+}
+
+.card-btn {
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 25px;
+    background-color: #4267B2;
+}
+
+.card-btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#purchase-main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.purchase-input-form {
+    background-color: #4267B2;
+    border-radius: 10px;
+    width: 45vw;
+    padding: 30px;
+    margin: 30px 0 10px 0;
+}
+
+.purchase-input-form h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.purchase-input-form form input {
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+
+.purchase-input-form form button {
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    background: #4267B2;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.purchase-input-form form button:hover {
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+.purchase-input-form form label {
+    color: black;
+}
+
+::placeholder {
+    color: #dae4fa;
+}
+
+.purchase-content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    width: 90vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+.purchase-content-table thead tr {
+    background-color: #4267B2;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.purchase-content-table thead th {
+    padding: 8px;
+}
+
+.purchase-content-table td {
+    padding: 12px 15px;
+}
+
+.purchase-content-table tbody tr {
+    border-bottom: 1px solid #dddd;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #4267B2;
+}
+
+.nav-li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-li :hover {
+    background-color: #21458f;
+}
+
+@media (max-width:500px) {
+    #nav-ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
